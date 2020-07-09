@@ -5,11 +5,20 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
-      if @post.valid?
-        redirect_to posts_url
-      else
-        flash[:alert] = "comment cannot be blank"
-      end
+
+    if @post.valid?
+      redirect_to posts_url
+    else
+      redirect_to posts_url, notice: 'cannot submit an empty post'
+    end 
+
+
+#       if @post.valid?
+#         redirect_to posts_url
+#       else
+#         flash[:alert] = "comment cannot be blank"
+#       end
+
   end
 
   def index
