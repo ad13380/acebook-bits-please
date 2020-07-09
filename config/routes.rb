@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :albums
-    post '/users/:user_id/albums', to: 'albums#create', as: 'create_album'
   end
 
   resources :sessions, only: [:new, :create, :destroy]
@@ -23,6 +22,7 @@ Rails.application.routes.draw do
     patch '/comments/:id', to: 'comments#update', as: 'update_comment'
   end
 
+  post '/users/:user_id/albums', to: 'albums#create', as: 'create_album'
   post '/users/:user_id/images/:id', to: 'profile#set_photo', as: 'set_profile_photo'
   delete '/users/:user_id/albums/:album_id/images/:id', to: 'images#destroy', as: 'destroy_image'
   delete '/users/:user_id/albums/:id', to: 'albums#destroy', as: 'destroy_album'

@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :posts
   has_many :comments
+  has_many :albums
   validates :firstname, presence: true
   validates :lastname, presence: true
   has_secure_password 
