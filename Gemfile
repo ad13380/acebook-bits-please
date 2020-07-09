@@ -43,6 +43,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop'
+  gem 'shoulda-matchers'
   gem 'selenium-webdriver'
   gem 'travis'
   gem 'travis-lint'
