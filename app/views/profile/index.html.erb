@@ -2,7 +2,7 @@
 <% if @photo %>
   <%= image_tag(rails_blob_path(@photo), size: '200x200') %>
 <% else %>
-
+  <%= image_tag("default-profile-picture.png", size: '200x200') %>
 <% end %>
 
 <br>
