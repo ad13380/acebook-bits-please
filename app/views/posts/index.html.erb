@@ -10,7 +10,7 @@
 <% end %>
 <% @posts.reverse.each do |post| %>
   <!-- name of poster -->
-  <p><%= User.find(post.user_id).firstname %></p>
+  <p><%= link_to "#{User.find(post.user_id).firstname}", profile_index_path(:id => User.find(post.user_id)) %></p>
   <!-- post message -->
   <p><%= post.message %></p>
     <% if post.user_id == current_user.id %>
