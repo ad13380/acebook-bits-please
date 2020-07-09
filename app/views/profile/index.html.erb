@@ -12,8 +12,10 @@
   <tbody>
     <% @albums.each do |album| %>
       <tr>
+        <% if album.user_id == @user.id %>
         <td><%= album.title %></td>
         <td><%= link_to 'View Album', user_album_url(@user.id, album.id) %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
