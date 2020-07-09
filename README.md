@@ -239,9 +239,10 @@ Day 2: Al & Ant / Bene & Katie
 4. Put together presentation of project
 
 
-## Future Modifications
+# Future Modifications
 
-In the limited time we had to complete the project we managed to implement 3 features (posts, comments and photos). If we had some more time we would like to add the following features to our application:
+In the limited time we had to complete the project we managed to implement 3 features (posts, comments and photos). If we had some more time we would like to add the following features to our application.
+
     * Users can like other users' photos, posts and comments
     * Users can comment on users' photos
     * User's profile picture is shown by their name on all pages
