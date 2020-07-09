@@ -69,6 +69,6 @@ class AlbumsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def album_params
-      params.require(:album).permit(:title, images: [])
+      params.require(:album).permit(:title, :user_id, images: [])
     end
 end
