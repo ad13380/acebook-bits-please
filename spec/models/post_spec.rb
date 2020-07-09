@@ -45,6 +45,12 @@ RSpec.describe Post, type: :model do
     post.message = 'hello/nworld'
     expect(subject).to be_valid
   end 
-
+  
+  describe "Associations" do
+    it "posts should belong to a user" do
+    user = User.create! valid_attributes
+     expect(subject).to belong_to(:user)
+    end
+  end
 
 end
