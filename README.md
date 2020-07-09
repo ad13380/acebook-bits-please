@@ -62,6 +62,31 @@ For security reasons, after I finished using the app
 I would like to be able to sign out
 ```
 ```
+As a user
+So that I can tell people how I feel about their post
+I would like to be able to comment on them
+```
+```
+As a user
+If I make a mistake or want to remove my post
+I would like to be able to edit or delete my own comments
+```
+```
+As a user
+So that the poster knows who has commented
+I would like my name to be detailed above my comment
+```
+```
+As a user
+So that I can share my life with the world
+I would like to be able to upload photos into albums
+```
+```
+As a user
+So that I can personalise my profile
+I would like to be able to set a photo from one of my albums as my profile picture
+```
+```
 As system designer
 So that I can offer an improved user experience
 I would like to collect user's first and last name on sign up
@@ -194,8 +219,24 @@ However we were thrown a curve ball during our morning stand up that due to a sh
     * Posts can have line breaks
     * SimpleCov
     
+ All remianing user stories were completed and outstanding tasks fixed.
+    
 Day 1: Al & Katie / Ant & Bene
 Day 2: Al & Ant / Bene & Katie
+
+# Sprint 4
+
+1. Style website
+    * Bootstrap for styling
+
+2. Fix any remaining issues
+    * Merge remaining branches
+    * Test bugs
+
+3. Ensure Test coverage
+    * Set up SimpleCov
+    
+4. Put together presentation of project
 
 ## How to contribute to this project
 See [CONTRIBUTING.md](CONTRIBUTING.md)
