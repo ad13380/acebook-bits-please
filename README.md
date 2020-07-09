@@ -238,6 +238,18 @@ Day 2: Al & Ant / Bene & Katie
     
 4. Put together presentation of project
 
+
+## Future Modifications
+
+In the limited time we had to complete the project we managed to implement 3 features (posts, comments and photos). If we had some more time we would like to add the following features to our application:
+    * Users can like other users' photos, posts and comments
+    * Users can comment on users' photos
+    * User's profile picture is shown by their name on all pages
+    * Add friend requests
+    * The ability to add a single photo to an existing album
+    * Album's are shown by thumbnails with cover photos
+    * More time to spend on styling
+
 ## How to contribute to this project
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
