@@ -1,15 +1,108 @@
-<h1><%= @user.firstname %>'s Profile Page</h1>
-<% if @photo %>
-  <%= image_tag(rails_blob_path(@photo), size: '200x200') %>
-<% else %>
-  <%= image_tag("default-profile-picture.png", size: '200x200') %>
-<% end %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Acebook</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+      .custom-width {
+        width: 1000px;
+      }
+      .border {
+        border-width:3px !important;
+      }
+      .post-rounded {
+        border-radius: 13px;
+        background-color: #ebeef0;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+      <div class="container custom-width">
+        
+        <!-- brand -->
+        <a class="navbar-brand" href="/posts">Acebook</a>
+
+        <!-- collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <!-- links -->
+        <div class="collapse navbar-collapse order-2 flex-row-reverse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <%= link_to("Posts", posts_path, class: "nav-item nav-link") %> 
+            <%= link_to("Log out", session_path(:id => current_user.id), :method => :delete, class: "nav-item nav-link") %>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-4 custom-width">
+      <!-- Additional Whitespace -->
+      <div class="col-xs-12" style="height:60px;"></div>
+
+      <div class="row">
+        
+        <div class="col-lg-4 mx-0 px-3">
+          <div class="row mx-0">
+            <div class="post-rounded my-2 px-2 " style="min-height: 30px;">
+              <div class="py-2">
+                <!-- Profile Photo -->
+                <% if @photo %>
+                  <%= image_tag(rails_blob_path(@photo), size: '280x280', class: "my-1 center border border-dark rounded-circle") %>
+                <% else %>
+                  <%= image_tag("default-profile-picture.png", size: '280x280') %>
+                <% end %>
+
+                <!-- Name -->
+                <h4 class="text-center pt-2 mb-2"><%= @user.firstname %> <%= @user.lastname %></h4>
+              </div>
+            </div>   
+          </div>
+        </div>
+
+        
+
+
+
+        <div class="col-lg-8 pl-0">
+          <div class="row mx-0">
+            <div class="post-rounded my-2 px-2 " style="min-height: 30px;">
+          sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
 
 <br>
 <%= link_to "Add Photo Album", new_user_album_path(@user.id) %>
 <br>
-<%= link_to "Back to posts", posts_path %>
-<br>
+
 <br>
 
 <table>
