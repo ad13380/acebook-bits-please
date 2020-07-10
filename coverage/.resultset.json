@@ -1,6 +1,44 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/album_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/albums_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/application_helper.rb": [
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/comments_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/images_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/profile_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ],
       "/Users/alastairsumner/Projects/acebook-rails-template/app/controllers/albums_controller.rb": [
         1,
         1,
@@ -419,44 +457,6 @@
         0,
         0
       ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/albums_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/comments_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/welcome_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/profile_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/images_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/users_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/sessions_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/album_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/alastairsumner/Projects/acebook-rails-template/app/helpers/application_helper.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/alastairsumner/Projects/acebook-rails-template/app/channels/application_cable/connection.rb": [
         0,
         0,
@@ -474,6 +474,6 @@
         0
       ]
     },
-    "timestamp": 1594369855
+    "timestamp": 1594370440
   }
 }

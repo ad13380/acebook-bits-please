@@ -37,6 +37,7 @@ gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 group :test do
   gem 'simplecov', require: false
+  gem 'simplecov-console', '~> 0.7.2'
 end
 
 group :development, :test do

@@ -42,6 +42,19 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+  require 'simplecov'
+  SimpleCov.start 'rails' do
+    add_filter '/bin/'
+    add_filter '/db/'
+    add_filter '/spec/' # for rspec
+    add_filter '/test/' # for minitest
+  end
+  require 'simplecov-console'
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::Console,
+  ])
+
   # This option will default to `:apply_to_host_groups` in RSpec 4 (and will
   # have no way to turn it off -- the option exists only for backwards
   # compatibility in RSpec 3). It causes shared context metadata to be
