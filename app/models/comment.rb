@@ -4,7 +4,7 @@ class Comment < ApplicationRecord
   validates :body, presence: true, allow_blank: false
 
   def editable?
-    Time.now - self.updated_at < 10.seconds
+    Time.now - self.updated_at < 10.minutes
   end
 end
 
