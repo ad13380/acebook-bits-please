@@ -9,7 +9,6 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/rspec'
-require 'support/factory_bot'
 # Add additional requires below this line. Rails is not loaded until this point!
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
