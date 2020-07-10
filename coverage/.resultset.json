@@ -1,45 +1,45 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/album_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/album_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/albums_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/albums_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/application_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/application_helper.rb": [
         null,
         null,
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/comments_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/comments_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/images_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/images_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/profile_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/profile_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/sessions_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/users_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/helpers/welcome_helper.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/albums_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/albums_controller.rb": [
         1,
         1,
         null,
@@ -112,46 +112,46 @@
         null,
         null,
         1,
-        0,
-        null,
-        null
-      ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/application_controller.rb": [
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        430,
-        429,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        104,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/images_controller.rb": [
-        1,
-        1,
-        0,
-        0,
         0,
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/posts_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/application_controller.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        444,
+        443,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        107,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/images_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/posts_controller.rb": [
         1,
         1,
         0,
@@ -176,8 +176,8 @@
         null,
         null,
         1,
-        64,
-        64,
+        66,
+        66,
         null,
         null,
         null,
@@ -205,18 +205,18 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/sessions_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/sessions_controller.rb": [
         1,
         1,
         1,
         null,
         null,
         1,
+        33,
+        null,
+        33,
         31,
-        null,
         31,
-        29,
-        29,
         null,
         null,
         2,
@@ -231,7 +231,7 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/users_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/users_controller.rb": [
         1,
         1,
         1,
@@ -249,7 +249,7 @@
         null,
         null,
         1,
-        42,
+        45,
         null,
         null,
         null,
@@ -259,11 +259,11 @@
         null,
         null,
         1,
-        39,
+        41,
         null,
-        39,
-        39,
-        64,
+        41,
+        41,
+        68,
         null,
         null,
         14,
@@ -304,18 +304,18 @@
         null,
         null,
         1,
-        39,
+        41,
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/welcome_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/welcome_controller.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/models/album.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/models/album.rb": [
         1,
         1,
         1,
@@ -342,14 +342,14 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/models/application_record.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/models/application_record.rb": [
         null,
         null,
         1,
         1,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/models/post.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/models/post.rb": [
         null,
         null,
         1,
@@ -363,7 +363,7 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/models/user.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/models/user.rb": [
         1,
         1,
         1,
@@ -378,14 +378,14 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/profile_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/profile_controller.rb": [
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        2,
         null,
         null,
         1,
@@ -395,7 +395,7 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/models/comment.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/models/comment.rb": [
         1,
         1,
         1,
@@ -407,7 +407,7 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/controllers/comments_controller.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/controllers/comments_controller.rb": [
         1,
         null,
         1,
@@ -438,7 +438,7 @@
         null,
         null
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/mailers/application_mailer.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
@@ -446,13 +446,13 @@
         0,
         0
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/jobs/application_job.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/jobs/application_job.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/channels/application_cable/connection.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
@@ -460,7 +460,7 @@
         0,
         0
       ],
-      "/Users/katiemcdonagh/w8/acebook-bits-please/app/channels/application_cable/channel.rb": [
+      "/Users/student/Desktop/Makers/acebook-bits-please(old)/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
@@ -469,6 +469,6 @@
         0
       ]
     },
-    "timestamp": 1594379661
+    "timestamp": 1594381013
   }
 }

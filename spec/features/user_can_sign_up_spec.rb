@@ -91,11 +91,16 @@ RSpec.feature "Signing up", type: :feature do
   end 
 
   scenario "page renders a back link" do
-    expect(page).to have_link("Back")
+    expect(page).to have_link("Log In")
   end
 
+  scenario "page renders a back link" do
+    expect(page).to have_link("Acebook")
+  end
+
+
   scenario "back button should lead user back to the landing page" do
-    click_link "Back"
+    click_link "Log In"
     expect(page).to have_current_path('/')
   end
 end
