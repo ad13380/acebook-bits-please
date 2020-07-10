@@ -41,15 +41,14 @@
       <!-- Additional Whitespace -->
       <div class="col-md-12" style="height:60px;"></div>
 
+      <!-- Notice -->
+      <p id="notice" class="text-success text-center"><%= notice %></p>
+
       <p class="mb-0"><%= link_to "← Back to #{@user.firstname}'s profile", profile_index_path(:id => params[:user_id]) %></p>
       <!-- Delete Album -->
       <% if @user.id == current_user.id %>
-        <p class="mb-0"><%= link_to 'Delete Album', destroy_album_path(:user_id => params[:user_id], :id => params[:id]), method: :delete, class: "text-danger",data: { confirm: 'Are you sure?' } %></p>
+        <p class="mb-0"><%= link_to 'Delete Album', destroy_album_path(:user_id => params[:user_id], :id => params[:id]), method: :delete, class: "text-secondary",data: { confirm: 'Are you sure?' } %></p>
       <% end %>
-
-
-      <!-- Notice -->
-      <p id="notice" class="text-success"><%= notice %></p>
 
       <!-- Album Title -->
       <h2 class="my-3"> <%= @album.title %> </h2>
