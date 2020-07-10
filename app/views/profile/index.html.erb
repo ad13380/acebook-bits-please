@@ -42,6 +42,7 @@
         <div class="collapse navbar-collapse order-2 flex-row-reverse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <%= link_to("Posts", posts_path, class: "nav-item nav-link") %> 
+            <%= link_to("My Profile", profile_index_path(:id => current_user.id), class: "nav-item nav-link") %> 
             <%= link_to("Log out", session_path(:id => current_user.id), :method => :delete, class: "nav-item nav-link") %>
           </div>
         </div>
@@ -56,13 +57,13 @@
         
         <div class="col-lg-4 mx-0 px-3">
           <div class="row mx-0">
-            <div class="post-rounded my-2 px-2 " style="min-height: 30px;">
+            <div class="post-rounded my-2" style="width:300px">
               <div class="py-2">
                 <!-- Profile Photo -->
                 <% if @photo %>
-                  <%= image_tag(rails_blob_path(@photo), size: '280x280', class: "my-1 center border border-dark rounded-circle") %>
+                  <%= image_tag(rails_blob_path(@photo), size: '260x260', class: "my-1 center border border-dark rounded-circle") %>
                 <% else %>
-                  <%= image_tag("default-profile-picture.png", size: '280x280') %>
+                  <%= image_tag("default-profile-picture.png", size: '260x260', class: "my-1 center border border-dark rounded-circle") %>
                 <% end %>
 
                 <!-- Name -->
@@ -70,23 +71,59 @@
               </div>
             </div>   
           </div>
+
+          <div class="row mx-0">
+            <div class="post-rounded my-2 px-2" style="min-height: 20px; width:300px">
+              <!-- Add Photo Album -->
+              <% if current_user.id == @user.id %>
+                <div class="py-2">
+                  <%= link_to "Add Photo Album", new_user_album_path(@user.id) %>
+                </div>
+              <% end %>
+              <table class="my-2" style="width:100%">
+                <tbody>
+                  <% @albums.each do |album| %>
+                    <tr>
+                      <% if album.user_id == @user.id %>
+                      <td><%= album.title %></td>
+                      <td style="text-align:right"><%= link_to 'View Album', user_album_url(@user.id, album.id) %></td>
+                      <% end %>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>   
+          </div>
         </div>
 
-        
+        <div class="col-lg-8 pl-0">   
+          <!-- Posts -->      
+          <% @posts.reverse.each do |post| %>          
+            <% if post.user_id == @user.id %>
+              <div class="row mx-0 mt-1">
 
+                <!-- Poster Name -->  
+                <%= link_to "#{User.find(post.user_id).firstname.capitalize()}", profile_index_path(:id => User.find(post.user_id)), class: "mb-0 pb-0", style:"font-size: 19px;" %>
+                <span class="mb-0 pb-0 ml-1" style="font-size: 19px;">made a post</span>           
+                <div class="post-rounded my-2 px-2 " style="min-height: 10px; width:700px">
 
+                  <!-- Post Message -->  
+                  <p class="pt-1 text-dark mb-1"><%= post.message %></p>
 
-        <div class="col-lg-8 pl-0">
-          <div class="row mx-0">
-            <div class="post-rounded my-2 px-2 " style="min-height: 30px;">
-          sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf sdfasdfa asdfasdfasfasdf 
-            </div>
-          </div>
+                  <!-- Edit/Delete Post -->  
+                  <% if post.user_id == current_user.id %>
+                    <% if post.editable? %>
+                      <%= link_to "Edit", edit_post_path(post), id: 'edit', style: "font-size: 14px;", class: "text-secondary" %> · 
+                    <% end %>
+                    <%= link_to "Delete", destroy_post_path(:id => post.id), :method => :delete, style: "font-size: 14px;", class: "text-secondary"%>
+                  <% end %>           
+                </div>
+              </div>
+            <% end %>           
+          <% end %>    
         </div>
       </div>
     </div>
-
-
   </body>
 </html>
 
@@ -99,30 +136,7 @@
 
 
 
-<br>
-<%= link_to "Add Photo Album", new_user_album_path(@user.id) %>
-<br>
-
-<br>
-
-<table>
-  <tbody>
-    <% @albums.each do |album| %>
-      <tr>
-        <% if album.user_id == @user.id %>
-        <td><%= album.title %></td>
-        <td><%= link_to 'View Album', user_album_url(@user.id, album.id) %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
 
 
-<% @posts.each do |post| %>
-  <% if post.user_id == @user.id %>
-    <p><%= post.message %></p><br>
-  <% end %>
-<% end %>
+
+
