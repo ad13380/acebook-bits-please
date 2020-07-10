@@ -1,4 +1,85 @@
-<h1>New Album</h1>
-<%= render 'form', album: @album %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Acebook</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+      .custom-width {
+        width: 1000px;
+      }
+      .custom {
+        border-radius: 40px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+      <div class="container custom-width">
+        
+        <!-- brand -->
+        <a class="navbar-brand" href="/posts">Acebook</a>
 
-<%= link_to 'Back', profile_index_path(:id => params[:user_id]) %>
+        <!-- collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <!-- links -->
+        <div class="collapse navbar-collapse order-2 flex-row-reverse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <%= link_to("Posts", posts_path, class: "nav-item nav-link") %> 
+            <%= link_to("My Profile", profile_index_path(:id => current_user.id), class: "nav-item nav-link") %> 
+            <%= link_to("Log out", session_path(:id => current_user.id), :method => :delete, class: "nav-item nav-link") %>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pt-4" style="width:600px">
+      <!-- Additional Whitespace -->
+      <div class="col-md-12" style="height:60px;"></div>
+
+      <!-- New Album Title -->
+      <h2 class="my-3"> New Album </h2>
+
+      <%= form_with(model: @album, url: create_album_path, local: true, class: 'form-group mb-1') do |form| %>
+        <% if @album.errors.any? %>
+          <div id="error_explanation">
+            <h5 class="text-danger"><%= pluralize(@album.errors.count, "error") %> prohibited this post from being saved:</h5>
+            <ul>
+              <% @album.errors.full_messages.each do |message| %>
+                <li class="text-danger"><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field">
+          <%= form.label(:title, class: "mb-0") %>
+          <%= form.text_field(:title, class: "form-control mb-2", placeholder: 'New Album') %>
+        </div>
+
+        <div class="field">
+          <%= form.label(:images, class: "mb-0 pt-1")%><br>
+          <%= form.file_field :images, :class => 'mb-2', multiple: true %>
+        </div>
+
+        <div>
+          <%= form.submit "Submit", :class => 'btn btn-primary custom mt-2' %>
+        </div>
+
+        <div class="field">
+          <%= form.hidden_field :user_id, :value => current_user.id %>
+        </div>
+
+      <% end %>
+    </div>
+  </body>
+</html>
+

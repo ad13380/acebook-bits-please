@@ -103,9 +103,15 @@
               <div class="row mx-0 mt-1">
 
                 <!-- Poster Name -->  
-                <%= link_to "#{User.find(post.user_id).firstname.capitalize()}", profile_index_path(:id => User.find(post.user_id)), class: "mb-0 pb-0", style:"font-size: 19px;" %>
-                <span class="mb-0 pb-0 ml-1" style="font-size: 19px;">made a post</span>           
-                <div class="post-rounded my-2 px-2 " style="min-height: 10px; width:700px">
+                <div class="row mx-0 mt-1" style="width:700px">
+                  <%= link_to "#{User.find(post.user_id).firstname.capitalize()}", profile_index_path(:id => User.find(post.user_id)), class: "mb-0 pb-0", style:"font-size: 19px;" %>              
+                </div>   
+                      
+                <div class="row mx-0" style="text-align:right">
+                  <p class="mb-0 pb-0 text-secondary" style="font-size: 14px;"><%= post.updated_at.in_time_zone("London").strftime("%-d %b at %H:%M") %></p>  
+                </div>
+                
+                <div class="post-rounded mb-2 mt-1 px-2 " style="min-height: 10px; width:700px">
 
                   <!-- Post Message -->  
                   <p class="pt-1 text-dark mb-1"><%= post.message %></p>
