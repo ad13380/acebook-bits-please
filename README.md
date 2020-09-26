@@ -17,6 +17,8 @@ We have been tasked with developing a Facebook clone as a two week team project 
 
 # Initial Ideas
 
+![move](./public/img/my-profile.gif)
+
 We spent the first afternoon of the project breaking down the first list of features that were provided for us into a number of tasks on our Trello board (https://trello.com/b/WN24QLdD/acebook-bits-please) and created an initial mock-up of how we expected our Acebook site to look:
 
 ## Flow representation of our MVP
