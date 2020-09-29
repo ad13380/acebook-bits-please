@@ -2,36 +2,20 @@
 <img src="./public/img/acebook_title.png" width="500px">
 <br><br>
 
-![Build Status](https://travis-ci.com/Katie-McDonagh/acebook-bit-please.svg?branch=master)
+![Build Status](https://travis-ci.com/Katie-McDonagh/acebook-bit-please.svg?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/ffcd66c763df6f7ccb25/maintainability)](https://codeclimate.com/github/ad13380/acebook-bits-please/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/ffcd66c763df6f7ccb25/test_coverage)](https://codeclimate.com/github/ad13380/acebook-bits-please/test_coverage)
 
 ### _This project was originally deployed on Heroku, but was later taken down due to ongoing monthly charges_
 
 </div>
 
-We have been tasked with developing a Facebook clone as a two week team project using Ruby on Rails working off a feature list rather than user stories. Our wonderful team is made up of:
+A fullstack social media clone, demonstrating the majority of the core functionality of Facebook. Developed using Ruby on Rails with a PostgreSQL database, this application allows users to sign, set up a profile, make posts and comments, and edit or delete their posts and comments at a later point. The timeframe for this project was 2 weeks.
+
+Our wonderful team is made up of:
 
 - Benedetta Arinci (https://github.com/BeneArinci)
 - Alastair Sumner (https://github.com/Sumner1185)
 - Katie McDonagh (https://github.com/Katie-McDonagh)
 - Anthony Donovan (https://github.com/ad13380)
-
-# Initial Ideas
-
-![move](./public/img/my-profile.gif)
-
-We spent the first afternoon of the project breaking down the first list of features that were provided for us into a number of tasks on our Trello board (https://trello.com/b/WN24QLdD/acebook-bits-please) and created an initial mock-up of how we expected our Acebook site to look:
-
-## Flow representation of our MVP
-
-<p align="center">
-<img src=/public/img/initialmodel.png width=50%>
-</p><br><br>
-
-## Views
-
-<p align="center">
-<img src=/public/img/views.png width=80%>
-</p><br><br>
 
 # User Stories
 
@@ -143,128 +127,6 @@ to ensure security and a good user experience
 Any non signed in user cannot visit any page other than the home page
 ```
 
-## Daily structure
-
-- 9:45am - Stand up
-- 9:45am - 10:15am: Day plan & code reviews
-- 10:15am - 12:00pm: Morning pairing session
-- 12:00pm - 12:30pm: Pre lunch catch up
-- 2:00pm - 5:00pm: Afternoon pairing session
-- 5:00pm - Retro (daily review + next day's plan)
-
-## Sprint 1
-
-Features to implement:
-
-1. Ability to Log in/ sign up:
-
-   - Ability for user to sign up with name, email, password
-   - Ability for user to log in with password and email
-   - Encrypt password
-   - Log in/ sign up checks (valid password/valid email address)
-
-2. Ability to post a message to the board:
-
-   - Logged in users can post a message to the board (any length, just text)
-   - Message comes with a time stamp on day written
-   - Message comes with date stamp if older than 1 day
-   - Messages appear on screen newest first
-
-3. Team work:
-   - Successfully deploy to Heroku
-   - Ensure Travis builds are green
-   - Get Rubocop set up and working
-
-Each pair will take on responsibility for a feature, developing it full stack, and will work on it for the day, if there is more than 1 days work they can continue it for another day, however we will swap pairs if the feature takes more than 2 days to complete.
-
-Bene and Al: ability to sign in/ sign up
-Ant and Katie: ability to post message to board
-
-## Sprint 2
-
-For the second sprint we decided to change our structure so that each team member had the chance to work on all features and not just on those initially assigned to that first pairing team.
-
-Features to implement - aim to complete all user stories from current Trello cards
-
-1. Create Sessions:
-
-   - Code should create a new session when a user logs in
-   - Session should be terminated when user logs out
-
-2. Posts:
-   - Assign a user_id to a post when created so that they can only be be manipulated by the creator
-3. Edit posts:
-   - When a post is created the user should have a 10 minute window to edit
-   - A user can only edit and delete their own posts
-4. Additional features:
-
-   - Create sign out link available on all pages
-   - Users cannot add a blank post
-   - Posts can have line breaks
-   - Anyone not logged in should not be able to visit any page other than the index page
-
-5. Testing:
-   - Rubocop
-   - Simplecov
-
-By the end of this sprint we had completed all user stories so far. The only features we were not able to implement were
-
-- Users cannot add a blank post
-- Posts can have line breaks
-- Simplecov
-
-Day 1: Al & Katie / Ant & Bene
-Day 2: Al & Ant / Bene & Katie
-
-# Sprint 3
-
-Last thing Friday we asked for a new feature to work on that we could break down and plan our third sprint around. The feature we were given was the ability for a user to comment on each other's posts.
-
-However we were thrown a curve ball during our morning stand up that due to a shift in the product market-fit that we are trying to achieve with this application, we need to implement a new feature that was to be prioritised above all other work. This feature was to add photo albums. Users want to be able to upload photos to display as their profile picture, so that everyone can see who they are.
-
-1. A signed-in user can:
-   - Upload photos which are stored in albums
-   - Choose a photo to be their profile picture
-   - Edit or delete photos (but not ones they don't own)
-   - See the albums of other users
-
-- Further Challenge
-  - Use AWS to store images
-  - A signed-in user can like and comment on photos
-
-2. A signed-in user can:
-   - comment on any post
-   - see a helpful message that their comment was successfully posted
-   - edit their own comments (for up to 10mins)
-   - edit capability is not possible afterwards
-   - see a helpful message that the edit was successful
-   - delete their own comments
-   - see a helpful message that the delete was successful
-3. Outstanding Tasks:
-   - Comments cannot be blank
-   - Posts can have line breaks
-   - SimpleCov
-
-All remianing user stories were completed and outstanding tasks fixed.
-
-Day 1: Al & Katie / Ant & Bene
-Day 2: Al & Ant / Bene & Katie
-
-# Sprint 4
-
-1. Style website
-
-   - Bootstrap for styling
-
-2. Fix any remaining issues
-
-   - Merge remaining branches
-   - Test bugs
-
-3. Ensure Test coverage
-   - Set up SimpleCov
-4. Put together presentation of project
-
 # Future Modifications
 
 In the limited time we had to complete the project we managed to implement 3 features (posts, comments and photos). If we had some more time we would like to add the following features to our application.
@@ -276,10 +138,6 @@ In the limited time we had to complete the project we managed to implement 3 fea
     * The ability to add a single photo to an existing album
     * Album's are shown by thumbnails with cover photos
     * More time to spend on styling
-
-## How to contribute to this project
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Quickstart
 
