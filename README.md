@@ -14,6 +14,10 @@ A fullstack social media clone, demonstrating the majority of the core functiona
 
 ## Features
 
+### Signing up, Logging in and Logging out
+
+<img src="./public/img/sign-in.gif">
+
 ```
 As a user
 So that I can connect to other people during this pandemic
@@ -25,6 +29,40 @@ As a user
 So that I can start using Acebook
 I would like to be able to sign in
 ```
+
+```
+As a user
+For security reasons, after I finished using the app
+I would like to be able to sign out
+```
+
+```
+As system designer
+So that I can offer an improved user experience
+I would like to collect user's first and last name on sign up
+```
+
+```
+As system designer
+So that I can offer high level of security
+Users will have to provide an email address with a correct format
+```
+
+```
+As system designer
+So that I can ensure higher level of security for users
+Users will have to provide a password of between 6 and 10 characters
+```
+
+```
+As a system designer
+to ensure security and a good user experience
+Any non signed in user cannot visit any page other than the home page
+```
+
+### Creating, Editing and Deleting a Post
+
+<img src="./public/img/post.gif">
 
 ```
 As a user
@@ -51,10 +89,14 @@ I would like to visualise every post with the date it was created
 ```
 
 ```
-As a user
-For security reasons, after I finished using the app
-I would like to be able to sign out
+As a system designer
+So that a specific comment's subject matter cannot be changed after a certain time
+Users are only able to edit their posts within 10 minutes from their creation
 ```
+
+### Creating, Editing and Deleting a Comment
+
+<img src="./public/img/comment.gif">
 
 ```
 As a user
@@ -64,8 +106,14 @@ I would like to be able to comment on them
 
 ```
 As a user
+If I change my mind about what I would like to share
+I would like to be able to delete my own comment
+```
+
+```
+As a user
 If I make a mistake or want to remove my post
-I would like to be able to edit or delete my own comments
+I would like to be able to edit my own comments
 ```
 
 ```
@@ -73,6 +121,10 @@ As a user
 So that the poster knows who has commented
 I would like my name to be detailed above my comment
 ```
+
+### Creating a profile, Uploading a photo album
+
+<img src="./public/img/my-profile.gif">
 
 ```
 As a user
@@ -86,23 +138,9 @@ So that I can personalise my profile
 I would like to be able to set a photo from one of my albums as my profile picture
 ```
 
-```
-As system designer
-So that I can offer an improved user experience
-I would like to collect user's first and last name on sign up
-```
+### Interacting with another user's content
 
-```
-As system designer
-So that I can offer high level of security
-Users will have to provide an email address with a correct format
-```
-
-```
-As system designer
-So that I can ensure higher level of security for users
-Users will have to provide a password of between 6 and 10 characters
-```
+<img src="./public/img/alex-profile.gif">
 
 ```
 As a system designer
@@ -112,14 +150,14 @@ Users are only able to edit and delete their own posts
 
 ```
 As a system designer
-So that a specific comment's subject matter cannot be changed after a certain time
-Users are only able to edit their posts within 10 minutes from their creation
+To ensure that the service is fair and secure
+Users are only able to edit and delete their own comments
 ```
 
 ```
 As a system designer
-to ensure security and a good user experience
-Any non signed in user cannot visit any page other than the home page
+To ensure that the service is fair and secure
+Users are only able to edit and delete their own photos
 ```
 
 ## Team Acebook
