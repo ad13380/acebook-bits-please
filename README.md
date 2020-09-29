@@ -4,20 +4,15 @@
 
 ![Build Status](https://travis-ci.com/Katie-McDonagh/acebook-bit-please.svg?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/ffcd66c763df6f7ccb25/maintainability)](https://codeclimate.com/github/ad13380/acebook-bits-please/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/ffcd66c763df6f7ccb25/test_coverage)](https://codeclimate.com/github/ad13380/acebook-bits-please/test_coverage)
 
+[Features](#features) | [Team Acebook](#team-acebook) | [Technologies](#technologies) | [Setup](#setup) | [Future Modifications](#future-Modifications)
+
 ### _This project was originally deployed on Heroku, but was later taken down due to ongoing monthly charges_
 
 </div>
 
-A fullstack social media clone, demonstrating the majority of the core functionality of Facebook. Developed using Ruby on Rails with a PostgreSQL database, this application allows users to sign, set up a profile, make posts and comments, and edit or delete their posts and comments at a later point. The timeframe for this project was 2 weeks.
+A fullstack social media clone, demonstrating the majority of the core functionality of Facebook. Developed using Ruby on Rails with a PostgreSQL database, this application allows users to sign up, set up a profile, upload photos, make posts and comments, and edit or delete their posts, comments or photos at a later point. The timeframe for this project was 2 weeks.
 
-Our wonderful team is made up of:
-
-- Benedetta Arinci (https://github.com/BeneArinci)
-- Alastair Sumner (https://github.com/Sumner1185)
-- Katie McDonagh (https://github.com/Katie-McDonagh)
-- Anthony Donovan (https://github.com/ad13380)
-
-# User Stories
+## Features
 
 ```
 As a user
@@ -127,27 +122,68 @@ to ensure security and a good user experience
 Any non signed in user cannot visit any page other than the home page
 ```
 
-# Future Modifications
+## Team Acebook
 
-In the limited time we had to complete the project we managed to implement 3 features (posts, comments and photos). If we had some more time we would like to add the following features to our application.
+Our wonderful team is made up of:
+
+- [Anthony Donovan](https://github.com/ad13380)
+- [Alastair Sumner](https://github.com/Sumner1185)
+- [Benedetta Arinci](https://github.com/BeneArinci)
+- [Katie McDonagh](https://github.com/Katie-McDonagh)
+
+## Technologies
+
+| Area                 | Technology                 |
+| -------------------- | -------------------------- |
+| Frameworks           | Ruby on Rails              |
+| Languages            | Ruby, HTML5, CSS3          |
+| Database and Storage | PostgreSQL, ActiveStorage  |
+| CI/CD                | Travis                     |
+| Hosting              | Heroku                     |
+| Testing and Coverage | RSpec, Capybara, Simplecov |
+
+## Setup
+
+### Database dependencies
+
+In order to run this application, you would need to have `PostgreSQL` installed. To install postgresQL via `Homebrew`, you can run the following commands:
+
+```
+$ brew install postgresql
+$ brew services start postgresql
+$ psql postgres
+```
+
+### Environment
+
+First clone this repository, then run:
+
+```
+$ bundle install
+$ bin/rails db:create
+$ bin/rails db:migrate
+$ bin/rails db:migrate RAILS_ENV=test
+```
+
+To run the application, run:
+
+```
+$ bin/rails server
+```
+
+To run tests, run:
+
+```
+$ bundle exec rspec
+```
+
+## Future Modifications
+
+In the limited time we had to complete the project we managed to implement 4 core features (posts, comments, profiles and photo albums). If we had some more time we would like to add the following features to our application.
 
     * Users can like other users' photos, posts and comments
     * Users can comment on users' photos
     * User's profile picture is shown by their name on all pages
     * Add friend requests
-    * The ability to add a single photo to an existing album
     * Album's are shown by thumbnails with cover photos
     * More time to spend on styling
-
-## Quickstart
-
-First, clone this repository. Then:
-
-```bash
-> bundle install
-> bin/rails db:create
-> bin/rails db:migrate
-
-> bundle exec rspec # Run the tests to ensure it works
-> bin/rails server # Start the server at localhost:3000
-```
